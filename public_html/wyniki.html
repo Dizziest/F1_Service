@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <title>Serwis o Formule 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/fontello.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="dimsemenov-Magnific-Popup-2ff1692/dist/magnific-popup.css">
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="dimsemenov-Magnific-Popup-2ff1692/dist/jquery.magnific-popup.js"></script>     
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            
+            <div id="header">
+                
+                <a href="index.html">
+                    <div id="logo">
+                        <img src="car-logo1.png" alt="logocar" style="float: left;" />F1<span style="color: #c34f4f; font-size: 75px; font-weight: bold;">4</span>ALL.COM<img src="car-logo2.png" alt="logocar" style="float: right;" />
+                     </div>
+                </a>
+                
+            </div>
+            
+            <nav id="nav">
+                <ol>
+                    <li> <a href="index.html">Strona główna</a> </li>
+                    <li> <a href="https://www.formula1.com/en.html" target="_blank">Oficjalna strona F1</a> </li>
+                     <li> <a href="history.html">Historia F1</a> </li>
+                     <li> <a href="https://powrotroberta.blogspot.com/" target="_blank">PowrótRoberta.pl</a> </li>
+                     <li> <a href="kontakt.html">Kontakt</a> </li>
+                     <li> <a href="galeria.html">Galeria</a> </li>
+                </ol>
+            </nav>
+            
+            <div style="clear: both;"></div>
+            
+            <div class="leftmenu">
+                <div class="menu">
+                    <a href="wyniki.html">Wyniki w latach</a>
+                    <button class="dropdown-btn">
+                        Grand Prix F1
+                        <span class="sub-arrow"></span>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="gpago.html">Dawniej</a>
+                        <a href="gpnow.html">Obecnie</a>
+                    </div>
+                
+                    <button class="dropdown-btn">
+                        Robert Kubica w F1
+                        <span class="sub-arrow"></span>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="kubicabmw.html">BMW Sauber</a>
+                        <a href="kubicarenault.html">Renault</a>
+                        <a href="kubicawilliams.html">Williams</a>
+                    </div>
+                
+                
+                    <a href="records.html">Rekordy</a>
+                    
+                </div>
+            </div>
+            
+            <div id="content">
+                <div id="yearButtons">
+                    <button class="year-button" onclick="showYears(1)">1950-1959</button>
+                    <button class="year-button" onclick="showYears(2)">1960-1969</button>
+                    <button class="year-button" onclick="showYears(3)">1970-1979</button>
+                    <button class="year-button" onclick="showYears(4)">1980-1989</button>
+                    <button class="year-button" onclick="showYears(5)">1990-1999</button>
+                    <button class="year-button" onclick="showYears(6)">2000-2009</button>
+                    <button class="year-button" onclick="showYears(7)">2010-</button>
+                </div>
+                <div id="years">
+                    
+                </div>
+            </div>
+            
+            <div class="rightmenu">
+                <div class="tables">
+                    <table class="driver-table">
+                        <caption><h2>Klasyfikacja kierowców</h2></caption>
+                        <tr>
+                            <th>M</th>
+                            <th>Kierowca</th>
+                            <th>Zespół</th>
+                            <th>Suma</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Lewis Hamilton</td>
+                            <td>Mercedes</td>
+                            <td>110</td>
+                        </tr>
+                         <tr>
+                            <td>2</td>
+                            <td>Sebastian Vettel</td>
+                            <td>Ferrari</td>
+                            <td>96</td>
+                        </tr>
+                         <tr>
+                            <td>3</td>
+                            <td>Daniel Riccardo</td>
+                            <td>Red Bull</td>
+                            <td>72</td>
+                        </tr>
+                         <tr>
+                            <td>4</td>
+                            <td>Valtteri Bottas</td>
+                            <td>Mercedes</td>
+                            <td>68</td>
+                        </tr>
+                         <tr>
+                            <td>5</td>
+                            <td>Kimi Raikkonen</td>
+                            <td>Ferrari</td>
+                            <td>60</td>
+                        </tr>
+                         <tr>
+                            <td>6</td>
+                            <td>Max Verstappen</td>
+                            <td>Red Bull</td>
+                            <td>35</td>
+                        </tr>
+                         <tr>
+                            <td>7</td>
+                            <td>Fernando Alonso</td>
+                            <td>McLaren</td>
+                            <td>32</td>
+                        </tr>
+                         <tr>
+                            <td>8</td>
+                            <td>Nico Hulkenberg</td>
+                            <td>Renault</td>
+                            <td>26</td>
+                        </tr>
+                         <tr>
+                            <td>9</td>
+                            <td>Carlos Sainz</td>
+                            <td>Renault</td>
+                            <td>20</td>
+                        </tr>
+                         <tr>
+                            <td>10</td>
+                            <td>Kevin Magnussen</td>
+                            <td>Haas</td>
+                            <td>19</td>
+                        </tr>
+                         <tr>
+                            <td>11</td>
+                            <td>Pierre Gasly</td>
+                            <td>Toro Rosso</td>
+                            <td>18</td>
+                        </tr>
+                         <tr>
+                            <td>12</td>
+                            <td>Sergio Perez</td>
+                            <td>Force India</td>
+                            <td>17</td>
+                        </tr>
+                         <tr>
+                            <td>13</td>
+                            <td>Esteban Ocon</td>
+                            <td>Force India</td>
+                            <td>9</td>
+                        </tr>
+                         <tr>
+                            <td>14</td>
+                            <td>Charles Leclerc</td>
+                            <td>Sauber</td>
+                            <td>9</td>
+                        </tr>
+                         <tr>
+                            <td>15</td>
+                            <td>Stoffen Vandoorne</td>
+                            <td>McLaren</td>
+                            <td>8</td>
+                        </tr>
+                         <tr>
+                            <td>16</td>
+                            <td>Lance Stroll</td>
+                            <td>Williams</td>
+                            <td>4</td>
+                        </tr>
+                         <tr>
+                            <td>17</td>
+                            <td>Marcus Ericsson</td>
+                            <td>Sauber</td>
+                            <td>2</td>
+                             <tr>
+                            <td>18</td>
+                            <td>Brendon Hartley</td>
+                            <td>Toro Rosso</td>
+                            <td>1</td>
+                        </tr>
+                         <tr>
+                            <td>19</td>
+                            <td>Romain Grosjean</td>
+                            <td>Haas</td>
+                            <td>0</td>
+                        </tr>
+                         <tr>
+                            <td>20</td>
+                            <td>Sergey Sirotkin</td>
+                            <td>Williams</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                    
+                    <table class="constructors-table">
+                        <caption><h2>Klasyfikacja konstruktorów</h2></caption>
+                        <tr>
+                            <th>M</th>
+                            <th>Zespół</th>
+                            <th>Suma</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Mercedes</td>
+                            <td>178</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Scuderia Ferrari</td>
+                            <td>156</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Red Bull TAG Heuer</td>
+                            <td>107</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Renault</td>
+                            <td>46</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>McLaren</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Force India Mercedes</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Scuderia Toro Rosso</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Haas Ferrari</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Sauber Alfa Romeo</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Williams Mercedes</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                    
+                    <table class="gpcalendar">
+                        <caption><h2>Kalendarz GP</h2></caption>
+                        <tr>
+                            <th>Wyścig</th>
+                            <th>Tor</th>
+                            <th>Data</th>
+                        </tr>
+                        <tr>
+                            <td>GP Australii</td>
+                            <td>Albert Park Circuit</td>
+                            <td>23-25.03</td>
+                        </tr>
+                        <tr>
+                            <td>GP Bahrajnu</td>
+                            <td>Bahrain International Circuit</td>
+                            <td>06-08.04</td>
+                        </tr>
+                        <tr>
+                            <td>GP Chin</td>
+                            <td>Shanghai International Circuit</td>
+                            <td>13-15.03</td>
+                        </tr>
+                        <tr>
+                            <td>GP Azerbejdżanu</td>
+                            <td>Bakı Şəhər Halqası</td>
+                            <td>27-29.04</td>
+                        </tr>
+                        <tr>
+                            <td>GP Hiszpanii</td>
+                            <td>Circuit de Catalunya</td>
+                            <td>11-14.05</td>
+                        </tr>
+                        <tr>
+                            <td>GP Monako</td>
+                            <td>Circuit de Monaco</td>
+                            <td>24-27.05</td>
+                        </tr>
+                        <tr>
+                            <td>GP Kanady</td>
+                            <td>Circuit Gilles Villeneuve</td>
+                            <td>08-10.06</td>
+                        </tr>
+                        <tr>
+                            <td>GP Francji</td>
+                            <td>Circuit de Nevers Magny-Cours</td>
+                            <td>22-24.06</td>
+                        </tr>
+                        <tr>
+                            <td>GP Austrii</td>
+                            <td>Red Bull Ring</td>
+                            <td>29-01.07</td>
+                        </tr>
+                        <tr>
+                            <td>GP Wlk. Brytanii</td>
+                            <td>Silverstone Circuit</td>
+                            <td>06-08.07</td>
+                        </tr>
+                         <tr>
+                            <td>GP Niemiec</td>
+                            <td>Hockenheimring</td>
+                            <td>20-22.07</td>
+                        </tr>
+                         <tr>
+                            <td>GP Węgier</td>
+                            <td>Hungaroring</td>
+                            <td>27-29.07</td>
+                        </tr>
+                         <tr>
+                            <td>GP Belgii</td>
+                            <td>Circuit de Spa-Francorchamps</td>
+                            <td>24-26.08</td>
+                        </tr>
+                         <tr>
+                            <td>GP Włoch</td>
+                            <td>Autodromo Nazionale di Monza</td>
+                            <td>31-02.08</td>
+                        </tr>
+                         <tr>
+                            <td>GP Singapuru</td>
+                            <td>Marina Bay Street Circuit</td>
+                            <td>14-16.09</td>
+                        </tr>
+                         <tr>
+                            <td>GP Rosji</td>
+                            <td>Sochi Autodrom</td>
+                            <td>28-30.09</td>
+                        </tr>
+                        <tr>
+                            <td>GP Japonii</td>
+                            <td>Suzuka</td>
+                            <td>05-07.10</td>
+                        </tr>
+                        <tr>
+                            <td>GP USA</td>
+                            <td>Circuit of the Americas</td>
+                            <td>19-21.10</td>
+                        </tr>
+                        <tr>
+                            <td>GP Meksyku</td>
+                            <td>Autódromo Hermanos Rodríguez</td>
+                            <td>26-28.10</td>
+                        </tr>
+                        <tr>
+                            <td>GP Brazylii</td>
+                            <td>Autódromo José Carlos Pace</td>
+                            <td>09-11.11</td>
+                        </tr>
+                        <tr>
+                            <td>GP Abu Dhabi</td>
+                            <td>Yas Marina Circuit</td>
+                            <td>23-25.11</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div id="socials">
+                <div id="socialdivs">
+                    <div class="fb">
+                        <i class="icon-facebook"> </i>
+                    </div>
+                    
+                    <div class="tw">
+                        <i class="icon-twitter"></i>
+                    </div>
+                    
+                    <div class="yt">
+                        <i class="icon-youtube"></i>
+                    </div>
+                    
+                    <div class="gplus">
+                        <i class="icon-gplus"></i>
+                    </div>
+                    <div style="clear: both">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div style="clear: both;"></div>
+            
+            <footer>
+                &copy; Marcin Michałowski. Wszelkie prawa zastrzeżone.
+            </footer>
+            
+        </div>
+        
+        
+    </body>
+</html>

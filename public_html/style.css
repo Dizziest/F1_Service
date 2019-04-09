@@ -1,0 +1,643 @@
+html{
+    min-height: 100%;
+}
+
+body{
+    background: #606060;
+    color: white;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    min-height: 100%;
+}
+
+
+#container{
+    width: 100%;
+    min-height: 100%;
+}
+
+#header{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    background: #292929;
+    font-size: 14px;
+    text-align: center;
+}
+
+#logo{
+    width: 45%;
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+#logo > span{
+    font-size: 75px;
+}
+
+#header > a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#nav{
+    width: 100%;
+    background: #c34f4f;
+    text-align: center;
+    border-top: solid 1px #751b1b;
+    border-bottom: solid 1px #751b1b;
+    padding: 10px;
+}
+
+#socials{
+    width: 100%;
+    text-align: center;
+    background: #292929;
+    clear: both;
+}
+
+#socialdivs{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fb{
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+.fb:hover{
+    background: #4668b3;
+    cursor: pointer;
+}
+
+.yt{
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+.yt:hover{
+    background: #d94348;
+    cursor: pointer;
+}
+
+.tw{
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+.tw:hover{
+    background: #3095d3;
+    cursor: pointer;
+}
+
+.gplus{
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+.gplus:hover{
+    background: #d95333;
+    cursor: pointer;
+}
+
+.sticky{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.leftmenu{
+    width: 15%;
+    background: #303030;
+    float: left;
+    min-height: 1200px;
+    height: auto;
+}
+
+#content{
+    width: 67%;
+    float: left;
+    text-align: justify;
+    padding-left: 2%;
+    padding-top: 40px;
+    font-size: 15px;
+    min-height: 100%;
+    height: auto;
+}
+
+.rightmenu{
+    width: 15%;
+    background: #303030;
+    float: right;
+    min-height: 1200px;
+    height: auto;
+}
+
+#nav ol{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+#nav ol a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#nav ol > li{
+    float: left;
+    width: 180px;
+    height: 40px;
+    border-right: 1px dashed #751d1b;
+    border-radius: 5px;
+}
+
+#nav ol > li:first-child{
+    border-left: 1px dashed #751d1b;
+}
+
+#nav ol > li:hover{
+    background:  #cf6969;
+}
+
+#nav ol > li:hover > a{
+    color: #451717;
+}
+
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.menu a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 90%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.menu a:hover, .dropdown-btn:hover{
+    color: red;
+}
+
+.active{
+    background-color: green;
+    color: white;
+}
+
+.dropdown-container{
+    display: none;
+    background-color: gray;
+    padding-left: 20px;
+}
+
+.sub-arrow:after{
+    content: '\203A';
+    float: right;
+    margin-right: 10px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+
+.menu{
+    margin-top: 60px;
+}
+
+.driver-table{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    text-align: center;
+    border: 1px white solid;
+    border-collapse: collapse;
+    background: #c34f4f;
+}
+
+.driver-table td, .driver-table th{
+    border: 1px white solid;
+}
+
+.driver-table tr:nth-child(odd){
+    background: #cf6969;
+}
+
+.gpcalendar{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    text-align: center;
+    border: 1px white solid;
+    border-collapse: collapse;
+    background: #c34f4f;
+}
+
+.gpcalendar td, .gpcalendar th{
+    border: 1px white solid;
+}
+
+.gpcalendar tr:nth-child(odd){
+    background: #cf6969;
+}
+
+.constructors-table{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    text-align: center;
+    border: 1px white solid;
+    border-collapse: collapse;
+    background: #c34f4f;
+}
+
+.constructors-table td, .constructors-table th{
+    border: 1px white solid;
+}
+
+.constructors-table tr:nth-child(odd){
+    background: #cf6969;
+}
+
+.tables{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 600px;
+    overflow: auto;
+}
+
+.years-table{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px white solid;
+    border-collapse: collapse;
+    background: #c34f4f;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.years-table tr:nth-child(odd){
+    background: #cf6969;
+}
+
+.years-table tr:first-child, .years-table tr > td:first-child{
+    background: #424242;
+}
+
+.years-table td, .years-table th{
+    border: 1px white solid;
+}
+
+.year-button{
+    background: #303030;
+    color: white;
+    border: 1px white solid;
+    display: block;
+    float: left;
+    width: 22%;
+    text-align: center;
+    font-size: 120%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.year-button:hover{
+    background: #606060;
+    cursor: pointer;
+}
+
+.grandprix{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px white solid;
+    border-collapse: collapse;
+    background: #c34f4f;
+}
+
+.grandprix th{
+    background: #424242;
+}
+
+.grandprix td, .grandprix th{
+    border: 1px white solid;
+    padding: 10px 5px;
+}
+
+.grandprix tr:nth-child(odd){
+    background: #cf6969;
+}
+
+.images{
+    float: right;
+    margin: 6px;
+}
+
+.records-tables{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.records{
+    font-size: 20px;
+    text-align: center;
+    border: 1px white solid;
+    border-collapse: collapse;
+    margin: 20px;
+    background: #c34f4f;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.records td, .records th{
+    border: 1px white solid;
+    padding: 5px;
+}
+
+.records tr:nth-child(odd){
+    background: #cf6969;
+}
+
+.records tr:first-child, .records tr > td:first-child{
+    background: #424242;
+}
+
+.gallery-cont{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gal-img{
+    width: 350px;
+    height: 210px;
+}
+
+.kontakt-form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    background: #f7f7f7;
+    height: max-content;
+    color: black;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.75);
+    padding: 15px;
+}
+
+.kontakt-form h1{
+    background: #43d1af;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    margin: -15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.kontakt-form input[type="tel"],
+.kontakt-form input[type="text"], 
+.kontakt-form input[type="email"], 
+.kontakt-form textarea{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 3%;
+    border: 1px solid #ccc;
+    padding: 3%;
+}
+
+.kontakt-form input[type="tel"]:focus,
+.kontakt-form input[type="text"]:focus, 
+.kontakt-form input[type="email"]:focus, 
+.kontakt-form textarea:focus{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.kontakt-form input[type="reset"],
+.kontakt-form input[type="submit"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 49.5%;
+    padding: 3%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 8px;
+}
+
+.kontakt-form input[type="reset"]:hover,
+.kontakt-form input[type="submit"]:hover{
+    background: #2EBC99;
+    border-radius: 8px;
+}
+
+.dane-kont{
+    font-size: 20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+iframe{
+    border: 0;
+}
+
+@media screen and (max-width: 1800px){
+    
+    #logo img {
+        display: none;
+    }
+    
+    .gal-img{
+        width: 280px;
+        height: 160px;
+    }
+    
+    #kubica_back{
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    
+    #nav ol > li {
+        font-size: 11px;
+        width: 100px;
+    }
+    
+    #content{
+        font-size: 10px !important;
+        padding: 2%;
+    }
+    
+    #logo{
+        font-size: 30px;
+    }
+    
+    #logo > span{
+        font-size: 40px;
+    }
+    
+   .leftmenu > .menu > a,
+   .leftmenu > .menu > button,
+   .leftmenu > .menu > .dropdown-container > a{
+        font-size: 10px; 
+    }
+    
+    .tables{
+        width: 95%;
+    }
+    
+    .rightmenu{
+        width: 14%;
+    }
+    
+    .driver-table,
+    .constructors-table,
+    .gpcalendar{
+        font-size: 8px;
+        padding: 0;
+    }
+    
+    .grandprix{
+        margin-top: 30px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .grandprix td, .grandprix th{
+        padding: 5px 3px;
+    }
+    
+    .records{
+        font-size: 10px;
+    }
+    
+    .records td, .records th{
+        padding: 3px;
+    }
+    
+    .dane-kont{
+        font-size: 12px;
+        text-align: left;
+    }
+    
+    .kontakt-form input[type="reset"],
+    .kontakt-form input[type="submit"]{
+        width: 49%;
+    }
+    
+    .gal-img{
+            width: 200px;
+            height: 140px;
+    }
+    
+    #kubica_back{
+        height: 300px !important;
+        width: 450px !important;
+    }
+    
+    #kubica_ride{
+        height: 240px;
+        width: 450px;
+    }
+    
+    .fb{
+        height: 80px;
+    }
+    
+    .tw{
+        height: 80px;
+    }
+    
+    .yt{
+        height: 80px;
+    }
+    
+    .gplus{
+        height: 80px;
+    }
+    
+    #mapka{
+        width: 250px !important;
+        height: 180px !important;
+    }
+    
+    .kontakt-form{
+        margin-top: 5%;
+    }
+    
+    footer{
+        font-size: 10px;
+    }
+    
+}
